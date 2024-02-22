@@ -51,3 +51,30 @@ barchartGC(~race + eatout,data=mydata, type="percent")
 
 ```
 From the previous data we can see that the overall frequency of the white race to eat out is higher than those who are black, and as while as the other races. The black race has the highest frequency for not eating out, compared to the white and the other race, all the other race represented in the above graph had a median statistics compared to the data from the white and the black race. 
+
+#Numerical 
+
+```{r}
+table1 <- xtabs(~race + eatout, data=mydata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The white race is eating at the percentage of 82.83%, the black race is eating at the percentage of 68.75, and the other race are at the percentage of 77.78% 
+
+#inferential
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+from the previous data, we noticed a statistical
+
+```{r}
+fisherXY(mydata$race,mydata$eatout)
+```
+
+
+
