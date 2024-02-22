@@ -73,8 +73,13 @@ fisher.test(table1)
 from the previous data, we noticed a statistical
 
 ```{r}
-fisherXY(mydata$race,mydata$eatout)
+fisherXY(mydata$race,mydata$eatout,printAll = TRUE)
 ```
+
+
+
+
+
 
 
 
