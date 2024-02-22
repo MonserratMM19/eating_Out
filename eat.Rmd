@@ -76,7 +76,7 @@ from the previous data, we noticed a statistical
 fisherXY(mydata$race,mydata$eatout,printAll = TRUE)
 ```
 
-
+When we first ran the fisher XY commands we got a low p-value only between white and black. however, when we ran it the other time, after adding the print, all equal true part, we got two different other values that were significantly higher than the first one.
 
 
 
